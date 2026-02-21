@@ -1,0 +1,38 @@
+Circuit: * U:\capteur\Circuit.asc
+
+Direct Newton iteration for .op point succeeded.
+.step c4=5e-07 r2=500
+.step c4=1e-06 r2=500
+.step c4=1.5e-06 r2=500
+.step c4=2e-06 r2=500
+.step c4=5e-07 r2=1000
+.step c4=1e-06 r2=1000
+.step c4=1.5e-06 r2=1000
+.step c4=2e-06 r2=1000
+.step c4=5e-07 r2=1500
+.step c4=1e-06 r2=1500
+.step c4=1.5e-06 r2=1500
+.step c4=2e-06 r2=1500
+.step c4=5e-07 r2=2000
+.step c4=1e-06 r2=2000
+.step c4=1.5e-06 r2=2000
+.step c4=2e-06 r2=2000
+
+Date: Wed Feb 11 11:13:53 2026
+Total elapsed time: 9.330 seconds.
+
+tnom = 27
+temp = 27
+method = modified trap
+totiter = 41323
+traniter = 41300
+tranpoints = 20651
+accept = 13281
+rejected = 7370
+matrix size = 16
+fillins = 5
+solver = Normal
+Avg thread counts: 1.1/1.2/1.2/1.1
+Matrix Compiler1: 728 bytes object code size  1.1/0.6/[0.4]
+Matrix Compiler2: 1.30 KB object code size  0.5/0.5/[0.5]
+

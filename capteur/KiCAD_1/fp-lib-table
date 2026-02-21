@@ -1,0 +1,5 @@
+(fp_lib_table
+  (version 7)
+  (lib (name "Arduino_MountingHole")(type "KiCad")(uri "${KIPRJMOD}/Arduino_MountingHole.pretty")(options "")(descr ""))
+  (lib (name "graphite_empreinte")(type "KiCad")(uri "U:/capteur/KiCAD_libraries/graphite_empreinte.pretty")(options "")(descr ""))
+)
