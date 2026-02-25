@@ -3530,6 +3530,10 @@
 		(uuid "4b348568-ae36-43a8-b200-d3ab7fcb3eae")
 	)
 	(no_connect
+		(at 38.1 50.8)
+		(uuid "77a1a238-d468-417e-a7c0-49094de5eab4")
+	)
+	(no_connect
 		(at 45.72 55.88)
 		(uuid "d181157c-7812-47e5-a0cf-9580c905fc86")
 	)
@@ -4897,7 +4901,7 @@
 			)
 		)
 	)
-	(global_label "VCC"
+	(global_label "+5V"
 		(shape input)
 		(at 87.63 171.45 0)
 		(fields_autoplaced yes)
@@ -5337,7 +5341,7 @@
 			)
 		)
 	)
-	(global_label "VCC"
+	(global_label "+5V"
 		(shape input)
 		(at 115.57 21.59 180)
 		(fields_autoplaced yes)
@@ -5425,7 +5429,7 @@
 			)
 		)
 	)
-	(global_label "VCC"
+	(global_label "+5V"
 		(shape input)
 		(at 66.04 127 0)
 		(fields_autoplaced yes)
@@ -6235,7 +6239,7 @@
 				(hide yes)
 			)
 		)
-		(property "Value" "VCC"
+		(property "Value" "+5V"
 			(at 147.32 38.1 0)
 			(effects
 				(font
@@ -6584,7 +6588,7 @@
 				(hide yes)
 			)
 		)
-		(property "Value" "VCC"
+		(property "Value" "+5V"
 			(at 116.84 27.94 0)
 			(effects
 				(font
@@ -7106,72 +7110,6 @@
 	)
 	(symbol
 		(lib_id "power:VCC")
-		(at 38.1 50.8 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "5ca20c89-dc15-4322-ac65-caf5d0f5fcce")
-		(property "Reference" "#PWR01"
-			(at 38.1 54.61 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "VCC"
-			(at 38.481 47.752 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" ""
-			(at 38.1 50.8 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 38.1 50.8 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"VCC\""
-			(at 38.1 50.8 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "6bd03990-0c6f-47aa-a191-9be4dd5032ee")
-		)
-		(instances
-			(project "Arduino_Uno"
-				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55"
-					(reference "#PWR01")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:VCC")
 		(at 182.88 33.02 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -7189,7 +7127,7 @@
 				(hide yes)
 			)
 		)
-		(property "Value" "VCC"
+		(property "Value" "+5V"
 			(at 182.88 27.94 0)
 			(effects
 				(font
@@ -8085,7 +8023,7 @@
 				(hide yes)
 			)
 		)
-		(property "Value" "VCC"
+		(property "Value" "+5V"
 			(at 151.13 160.02 0)
 			(effects
 				(font
@@ -8151,7 +8089,7 @@
 				(hide yes)
 			)
 		)
-		(property "Value" "VCC"
+		(property "Value" "+5V"
 			(at 127 165.1 0)
 			(effects
 				(font
