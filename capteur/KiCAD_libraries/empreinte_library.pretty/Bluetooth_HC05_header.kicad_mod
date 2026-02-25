@@ -1,0 +1,232 @@
+(footprint "Bluetooth_HC05_header"
+	(version 20241229)
+	(generator "pcbnew")
+	(generator_version "9.0")
+	(layer "F.Cu")
+	(property "Reference" "REF**"
+		(at 0 -4 0)
+		(layer "F.SilkS")
+		(uuid "1da2ff78-22e4-448b-bcf3-d95d63a9825f")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Value" "Bluetooth_header"
+		(at 0 -2.77 0)
+		(layer "F.Fab")
+		(uuid "7ce8718a-c168-417c-a744-97320eced40e")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Datasheet" ""
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "6cb20164-8529-4fa4-ade4-fd5591012332")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Description" ""
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "ec4124e7-8ff0-40af-9a16-66f2b408a17b")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(attr through_hole)
+	(fp_line
+		(start -5.31 -1.77)
+		(end 5.31 -1.77)
+		(stroke
+			(width 0.12)
+			(type default)
+		)
+		(layer "F.SilkS")
+		(uuid "e31e9f6e-9c6e-4e39-a31c-b3b763bed05f")
+	)
+	(fp_line
+		(start -5.31 1.77)
+		(end -5.31 -1.77)
+		(stroke
+			(width 0.12)
+			(type default)
+		)
+		(layer "F.SilkS")
+		(uuid "9e76e01e-8ad3-4848-bd7f-3ebdfc755f17")
+	)
+	(fp_line
+		(start -2.54 -1.77)
+		(end -2.54 1.77)
+		(stroke
+			(width 0.12)
+			(type default)
+		)
+		(layer "F.SilkS")
+		(uuid "5d13958f-63a8-425c-8ab2-f1090aa326a6")
+	)
+	(fp_line
+		(start 5.31 -1.77)
+		(end 5.31 1.77)
+		(stroke
+			(width 0.12)
+			(type default)
+		)
+		(layer "F.SilkS")
+		(uuid "7b6ce336-8506-44b0-b8c5-d6f6bb924640")
+	)
+	(fp_line
+		(start 5.31 1.77)
+		(end -5.31 1.77)
+		(stroke
+			(width 0.12)
+			(type default)
+		)
+		(layer "F.SilkS")
+		(uuid "7e7ad801-5af2-40d2-bf34-3883e40546c1")
+	)
+	(fp_line
+		(start -5.06 -1.52)
+		(end 5.06 -1.52)
+		(stroke
+			(width 0.05)
+			(type default)
+		)
+		(layer "F.CrtYd")
+		(uuid "0dd431c1-3e21-4541-8581-04e6ff231085")
+	)
+	(fp_line
+		(start -5.06 1.52)
+		(end -5.06 -1.52)
+		(stroke
+			(width 0.05)
+			(type default)
+		)
+		(layer "F.CrtYd")
+		(uuid "a02212a4-92f6-4a71-8952-17e8a918c875")
+	)
+	(fp_line
+		(start 5.06 -1.52)
+		(end 5.06 1.52)
+		(stroke
+			(width 0.05)
+			(type default)
+		)
+		(layer "F.CrtYd")
+		(uuid "b3b66332-5031-45bf-9377-8ab4636bc6c3")
+	)
+	(fp_line
+		(start 5.06 1.52)
+		(end -5.06 1.52)
+		(stroke
+			(width 0.05)
+			(type default)
+		)
+		(layer "F.CrtYd")
+		(uuid "83a604d1-bb83-429f-b65d-07bff02d5c5d")
+	)
+	(fp_text user "VCC"
+		(at -3 5 90)
+		(unlocked yes)
+		(layer "F.SilkS")
+		(uuid "664ceb38-f98a-49be-9a12-356f6abc6a78")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.1)
+			)
+			(justify left bottom)
+		)
+	)
+	(fp_text user "TXD"
+		(at 1.5 5 90)
+		(unlocked yes)
+		(layer "F.SilkS")
+		(uuid "71bf8dd2-ef60-4fc5-8f88-4ee5ff3f4d3d")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.1)
+			)
+			(justify left bottom)
+		)
+	)
+	(fp_text user "GND"
+		(at -1 5 90)
+		(unlocked yes)
+		(layer "F.SilkS")
+		(uuid "917ae77b-5856-466b-8afc-8629fdae98ab")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.1)
+			)
+			(justify left bottom)
+		)
+	)
+	(fp_text user "RXD"
+		(at 4.5 5 90)
+		(unlocked yes)
+		(layer "F.SilkS")
+		(uuid "b74474fb-bf4e-4702-9b81-0f96b29af233")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.1)
+			)
+			(justify left bottom)
+		)
+	)
+	(pad "1" thru_hole oval
+		(at -3.81 0)
+		(size 2 2.54)
+		(drill 1)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(thermal_bridge_angle 45)
+		(uuid "075f9ebf-e6b9-4a5f-a606-d49d3782ee54")
+	)
+	(pad "2" thru_hole oval
+		(at -1.27 0)
+		(size 2 2.54)
+		(drill 1)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(thermal_bridge_angle 45)
+		(uuid "05f18830-6b14-4153-a5d9-a373f4ef4a1e")
+	)
+	(pad "3" thru_hole oval
+		(at 1.27 0)
+		(size 2 2.54)
+		(drill 1)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(thermal_bridge_angle 45)
+		(uuid "af6f5a4a-3f67-4dc0-b6fe-877775dda0bc")
+	)
+	(pad "4" thru_hole oval
+		(at 3.81 0)
+		(size 2 2.54)
+		(drill 1)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(thermal_bridge_angle 45)
+		(uuid "a82da134-deb8-4e28-a98e-9a6dccc0f232")
+	)
+	(embedded_fonts no)
+)
