@@ -28,7 +28,7 @@ const float flatResistance = 25000.0; // resistance when flat
 const float bendResistance = 100000.0;  // resistance at 90 deg
 
 unsigned long lastSend = 0;
-const unsigned long interval = 300; // 100 ms
+const unsigned long interval = 100; // 100 ms
 
 static char selected_sensor = ' ';
 
@@ -80,11 +80,14 @@ void loop() {
     else if (cmd == 'F') {
       selected_sensor = 'F'; // flex sensor***************
     }
+    else if (cmd == 'A') {
+      selected_sensor = 'A';
+    }
     else {
       selected_sensor = ' ';
     }
-  }
   
+  }
   // Send data according to the selected sensor
   if (millis() - lastSend >= interval) {
       lastSend = millis();
@@ -109,6 +112,14 @@ void loop() {
         mySerial.println(Rflex);
         Serial.println(Rflex);
         selected_sensor = ' ';
+  }
+      else if (selected_sensor == 'A') {
+        int ADCflex = analogRead(flexPin);
+        float Vflex = ADCflex * VCC / 1023.0;
+        float Rflex = R_DIV * (VCC / Vflex - 1.0);
+        mySerial.println(Rflex);
+        Serial.println(Rflex);
+        
   }
 
 }
