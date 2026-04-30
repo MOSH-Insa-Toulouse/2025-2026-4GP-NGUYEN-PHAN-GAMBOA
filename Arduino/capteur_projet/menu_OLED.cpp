@@ -52,6 +52,7 @@ void initMenu() {
   display.clearDisplay();
 
   attachInterrupt(digitalPinToInterrupt(encoderPinA), doEncoder, RISING);
+  applyGain(128);
 
 }
 
