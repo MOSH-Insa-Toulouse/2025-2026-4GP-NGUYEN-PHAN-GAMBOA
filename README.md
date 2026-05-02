@@ -8,6 +8,7 @@ L’objectif est d’évaluer les performances, la fiabilité de ce capteur à f
 ## Sommaire
 - [Context](#context)
 - [Sommaire](#sommaire)
+- [Principe de fonctionnement du capteur en graphite](#principe-de-fonctionnement-du-capteur-en-graphite)
 - [Réalisation du projet](#réalisation-du-projet)
   - [Matériaux nécessaire](#matériaux-nécessaire)
   - [Simulation électronique sur LTSpice](#simulation-électronique-sur-ltspice)
@@ -21,12 +22,28 @@ L’objectif est d’évaluer les performances, la fiabilité de ce capteur à f
 - [Datasheet](#datasheet)
 - [Conclusion](#conclusion)
 
+## Principe de fonctionnement du capteur en graphite
+<div align="center">
+  <img src="Images/Schema_graphite_physics.png" width="100%">
+  <br/>
+  <b>Figure 1: Principe de fonctionnement du capteur graphite en traction et en compression</b>
+
+  <br/>
+<div style="text-align: left;">
+La mine de crayon est déposée sur le papier de manière mécanique. Elle pénètre dans la structure poreuse du papier et forme une piste conductrice composée de particules de graphite mélangées à un liant isolant, comme l’argile. Ces particules créent un réseau conducteur à l’intérieur des fibres du papier. Quand le papier est soumis à une contrainte mécanique, ce réseau change : sous traction, les contacts entre les particules diminuent, tandis que sous compression, ils augmentent. Ces modifications provoquent alors des variations mesurables de la résistance électrique.
+
 ## Réalisation du projet
 Afin d’atteindre les objectifs fixés, le travail a été divisé en deux tâches principales : 
 
 1. la mesure de la résistance du capteur en graphite et son affichage via une interface
 
 2. la réalisation de bancs de test pour évaluer l’efficacité de ce capteur
+<div align="center">
+  <img src="Images/Montage_de_mesure.jpg" width="100%">
+  <br/>
+  <b>Figure 2: Montage expérimental de mesure du capteur graphite</b>
+<div style="text-align: left;">
+
 ### Matériaux nécessaire
 Pour réaliser le shield, nous avons besoin du matériel suivant :
 
@@ -55,38 +72,42 @@ En raison du courant très faible fourni par le capteur, nous avons utilisé un 
 
 Pour limiter le bruit, en particulier le bruit du réseau électrique à 50 Hz, trois filtres passe‑bas ont été ajoutés. Ces filtres permettent aussi de s’assurer que le signal en sortie du circuit est compatible avec la fréquence d’acquisition de l’Arduino.
 
-Pour la simulation, le capteur graphite réel est modélisé dans LTSpice par une sortie de courant d’environ 150 nA. Le sous‑ensemble C3, R5 et le générateur V2 permet de simuler les bruits provenant de l’environnement.
 <div align="center">
-  <img src="Images/image.png" width="300">
+  <img src="Images/Circuit_analogique_schematic.png" width="100%">
   <br/>
-  <b>Figure 1: Menu principal</b>
-
+  <b>Figure 3: Circuit d’amplification et de filtrage du signal</b>
+  
+  <br/>
 <table>
   <tr>
     <td align="center">
-      <img src="Images/image (1).png" width="300" alt="Hình 1">
+      <img src="Images/Capteur_graphite_schematic.png" width="100%">
       <br/>
-      <b>Figure </b>
+      <b>Figure 4: Modèle électrique du capteur graphite</b>
     </td>
     <td align="center">
-      <img src="Images/Screenshot 2026-04-30 215444.png" width="300" alt="Hình 2">
+      <img src="Images/Courant_graphite_LTSpice.png" width="100%">
       <br/>
-     <b>Figure </b>
+     <b>Figure 5: Courant du capteur graphite simulé sous LTSpice (sans bruit)</b>
     </td>
   </tr>
 </table>
 
+<div style="text-align: left;">
+
+Pour la simulation, le capteur graphite réel est modélisé dans LTSpice par un circuit électronique dans le figure , qui produit une sortie de courant d’environ 150 nA conformément à la valeur réalité. Le sous‑ensemble C3, R5 et le générateur V2 permet de simuler les bruits provenant de l’environnement.
+
 <table>
   <tr>
     <td align="center">
-      <img src="Images/Screenshot 2026-04-30 215710.png" width="300" alt="Hình 1">
+      <img src="Images/Tension_entree_LTSpice.png" width="100%" alt="Hình 1">
       <br/>
-      <b>Figure </b>
+      <b>Figure 6: Tension d’entrée du circuit d'amplificateur simulée sous LTSpice</b>
     </td>
     <td align="center">
-      <img src="Images/Screenshot 2026-04-30 215648.png" width="300" alt="Hình 2">
+      <img src="Images/Tension_sortie_LTSpice.png" width="100%" alt="Hình 2">
       <br/>
-     <b>Figure </b>
+     <b>Figure 7: Tension de sortie du circuit (V_ADC) simulée sous LTSpice</b>
     </td>
   </tr>
 </table>
@@ -95,22 +116,23 @@ Les simulations montrent une tension d’entrée du circuit d’environ 18 mV av
 
 ### Conception PCB avec Kidcad
 <div align="center">
-  <img src="Images/Screenshot 2026-04-30 222739.png" width="300">
+  <img src="Images/Schematic_KiCad.png" width="100%">
   <br/>
-  <b>Figure 1: Menu principal</b>
-
+  <b>Figure 8: Schéma électronique global du système sous KiCad</b>
+  
+  <br/>
 <table>
   <tr>
     <td align="center">
-      <img src="Images/image (2).png" width="300" alt="Hình 1">
+      <img src="Images/PCB_Kicad.png" width="100%">
       <br/>
-      <b>Figure </b>
+      <b>Figure 9: Routage du PCB conçu sous KiCad </b>
     </td>
     <td align="center">
-      <img src="Images/image (3).png" width="300" alt="Hình 2">
+      <img src="Images/PCB_3D_Kicad.png" width="100%">
       <br/>
-     <b>Figure </b>
-    </td>
+     <b>Figure 10: Vue 3D du PCB conçu sous KiCad</b>
+    </td>9
   </tr>
 </table>
 <div style="text-align: left;">
@@ -119,14 +141,14 @@ Les simulations montrent une tension d’entrée du circuit d’environ 18 mV av
 <table>
   <tr>
     <td align="center">
-      <img src="Images/737bb54ba926287871372.jpg" width="300" alt="Hình 1">
+      <img src="Images/Shield_face_derrière.jpg" width="100%">
       <br/>
-      <b>Figure </b>
+      <b>Figure 11: Face arrière du PCB</b>
     </td>
     <td align="center">
-      <img src="Images/2f0c2e3c3251b30fea403.jpg" width="300" alt="Hình 2">
+      <img src="Images/Shield_face_avant.jpg" width="100%">
       <br/>
-     <b>Figure </b>
+     <b>Figure 12: Face avant du PCB assemblé</b>
     </td>
   </tr>
 </table>
@@ -147,33 +169,35 @@ Ce programme permet :
 Ces deux premières fonctionnalités sont pilotées via un écran OLED pour l’affichage et un encodeur rotatif utilisé pour la navigation et la sélection dans les menus.
 
 <div align="center">
-  <img src="Images/998466956897953028.jpg" width="300">
+  <img src="Images/Menu_principal_oled.jpg" width="100%">
   <br/>
-  <b>Figure 1: Menu principal</b>
-
+  <b>Figure 13: Menu principal affiché sur l’écran OLED</b>
+ 
+  <br/>
 <div align="center">
-  <img src="Images/2832030047224382400.jpg" width="300">
+  <img src="Images/Gain_menu_oled.jpg" width="100%">
   <br/>
-  <b>Figure 1: Gain menu</b>
+  <b>Figure 14: Menu de réglage du gain affiché sur l’écran OLED</b>
   <br/>
   Il suffit d’appuyer sur l’encodeur pour revenir au menu principal
-
+  
+  <br/>
 <table>
   <tr>
     <td align="center">
-      <img src="Images/343478864478811174.jpg" width="300" alt="Hình 1">
+      <img src="Images/Servomoteur_menu1.jpg" width="100%">
       <br/>
-      <b>Figure </b>
+      <b>Figure 15: Menu de sélection de l’angle du servomoteur affiché sur l’écran OLED</b>
     </td>
     <td align="center">
-      <img src="Images/343478864478811174 (1).jpg" width="300" alt="Hình 2">
+      <img src="Images/Servomoteur_menu2.jpg" width="100%">
       <br/>
-     <b>Figure </b>
+     <b>Figure 16: Menu de sélection de l’angle du servomoteur affiché sur l’écran OLED</b>
     </td>
     <td align="center">
-      <img src="Images/1051818459947776580.jpg" width="300" alt="Hình 3">
+      <img src="Images/Servomoteur_menu3.jpg" width="100%">
       <br/>
-      <b>Figure </b>
+      <b>Figure 17: Menu d'application de l’angle du servomoteur affiché sur l’écran OLED</b>
     </td>
   </tr>
 </table>
@@ -204,20 +228,23 @@ Cette application communique avec l’Arduino via une connexion Bluetooth et int
 * Mesure ponctuelle de la résistance du capteur sélectionné lors de l’appui sur le bouton Measure. L’utilisateur peut saisir la valeur de référence du capteur à l’état non déformé, puis l’application calcule automatiquement le rapport ΔR/R0. (Figure)
 
 <div align="center">
-  <img src="Images/7d024398-bd45-47b4-8095-33f9a691c197.jpg" width="300">
+  <img src="Images/Menu_principal_app.jpg" width="100%">
   <br/>
-  <b>Figure 1: Menu principal</b>
+  <b>Figure 18: Interface principale de l’application Android</b>
+  
+  <br/>
 
-
-<video src="Images/download.mp4" controls width="600">
+<video src="Images/Signal_real_time_menu.mp4" controls width="100%">
     Votre navigateur ne prend pas en charge la vidéo.  
 </video>
-  <b>Figure 1: Menu principal</b>
+  <b>Figure 19: Menu principal</b>
+
+<br/>
 
 <div align="center">
-  <img src="Images/mesuring_resistance.png" width="300">
+  <img src="Images/Mesuring_resistance_menu.png" width="100%">
   <br/>
-  <b>Figure 1: Menu principal</b>
+  <b>Figure 20: Interface de mesure de la résistance dans l’application Android</b>
 <div style="text-align: left;">
 
 
@@ -228,9 +255,9 @@ Ces bancs permettent d’analyser en particulier la sensibilité et la rentabili
 Pour mesurer la sensibilité des capteurs, un modèle mécanique imprimé en 3D a été utilisé.
 
 <div align="center">
-  <img src="Images/width_600.jpg" width="300">
+  <img src="Images/Test_bench_sensibilite.jpg" width="100%">
   <br/>
-  <b>Figure 1: Menu principal</b>
+  <b>Figure 21: Protocole de banc de test de sensibilité</b>
 <div style="text-align: left;"> 
 
 Ce modèle est constitué de plusieurs arcs de cercle de rayons différents, chaque rayon correspondant à un niveau de déformation différent appliqué au capteur.
@@ -240,24 +267,28 @@ La même procédure est appliquée au capteur graphite et au capteur flex, afin 
 Pour le capteur graphite, les mesures ont été réalisées avec différents types de graphite : HB, 2B, 4B et 6B.
 Les résultats obtenus sont présentés sur les figures suivantes, montrant l’évolution du rapport ΔR/R0 en fonction de la déformation, en traction et en compression.
 <div align="center">
-  <img src="Images/tension.png" width="300">
+  <img src="Images/Tension_graph.png" width="100%">
   <br/>
-  <b>Figure 1: Menu principal</b>
+  <b>Figure 22: Variation du rapport ΔR/R0​ en fonction de la déformation en tension pour différents types de graphite et le capteur flex</b>
+
+  <br/>
+
 
 <div align="center">
-  <img src="Images/compression.png" width="300">
+  <img src="Images/Compression_graph.png" width="100%">
   <br/>
-  <b>Figure 1: Menu principal</b>
+  <b>Figure 23: Variation du rapport ΔR/R0​ en fonction de la déformation en compression pour différents types de graphite et le capteur flex</b>
 <div style="text-align: left;"> 
 
 ##### Résultat
 <div align="center">
-  <img src="Images/sensibilite.png" width="300">
+  <img src="Images/Sensibilite_graphite.png" width="100%">
   <br/>
-  <b>Figure 1: Menu principal</b>
+  <b>Figure 24: Résultats de sensibilité des capteurs graphite (HB, 2B, 4B, 6B)</b>
+
   <br/>
-  <img src="Images/sensibilite_flex.png" width="300">
-  <b>Figure 1: Menu principal</b>
+  <img src="Images/Sensibilite_flex.png" width="100%">
+  <b>Figure 25: Résultats de sensibilité du capteur flex en traction et en compression</b>
 <div style="text-align: left;">   
 
 Les mesures montrent une relation globalement linéaire entre la variation de résistance ΔR/R0\Delta R / R_0ΔR/R0​ et la déformation appliquée, aussi bien en traction qu’en compression. Cela indique que les capteurs réagissent de manière cohérente aux déformations imposées.
@@ -267,28 +298,29 @@ Pour le capteur graphite, le graphite de type 2B présente la sensibilité la pl
 * en traction, la sensibilité du capteur flex est supérieure à celle du graphite 2B ;
 * en compression, la sensibilité du capteur flex est très faible, ce qui est cohérent avec le fait que ce type de capteur est principalement conçu pour fonctionner en traction, comme spécifié par le fabricant.
 #### Répétabilité
-Pour vérifier la répétabilité du capteur, un banc de test simple a été mis en place.
+Pour vérifier la répétabilité du capteur, nous avons mis en placeun banc de test simple.
 Comme montré sur les figures, un servomoteur est relié au capteur à l’aide d’un petit bâton en bois. L’ensemble du montage est fixé avec de la colle afin de limiter les déplacements parasites pendant les mesures.
 Le servomoteur applique successivement un angle de 0° puis de 120° au capteur. Ce cycle est répété cinq fois de suite.
 Ce test est réalisé avec un capteur graphite 2B, car ce type de graphite a montré la meilleure sensibilité lors des essais précédents. Le même protocole est également appliqué au capteur flex afin de pouvoir comparer les résultats.
 <div align="center">
-  <img src="Images/6e26c9e8d48555db0c947.jpg" width="300">
+  <img src="Images/Test_bench_servomoteur.jpg" width="100%">
   <br/>
-  <b>Figure 1: Menu principal</b>
+  <b>Figure 26: Protocole de banc de test de répétabilité avec servomoteur</b>
 <div style="text-align: left;"> 
 
 ##### Résultat
 <table>
   <tr>
     <td align="center">
-      <img src="Images/graphite_reapeability2.png" width="300" alt="Hình 1">
+      <img src="Images/Repetabilite_graphite_graph1.png" width="100%" alt="Hình 1">
       <br/>
-      <b>Figure </b>
+      <b>Figure 27: Répétabilité du capteur graphite – mesures répétées</b>
     </td>
     <td align="center">
-      <img src="Images/flex_repeatability.png" width="300" alt="Hình 2">
+      <img src="Images/Repetabilite_flex_graph1.png" width="100%" alt="Hình 2">
+
       <br/>
-     <b>Figure </b>
+     <b>Figure 28: Répétabilité du capteur flex – mesures répétées</b>
     </td>
   </tr>
 </table>
@@ -296,14 +328,14 @@ Ce test est réalisé avec un capteur graphite 2B, car ce type de graphite a mon
 <table>
   <tr>
     <td align="center">
-      <img src="Images/graphite_repeatability.png" width="300" alt="Hình 1">
+      <img src="Images/Repetabilite_graphite_graph2.png" width="100%">
       <br/>
-      <b>Figure </b>
+      <b>Figure 29: Répétabilité du capteur graphite 2B – valeur moyenne et écart‑type</b>
     </td>
     <td align="center">
-      <img src="Images/flex_repeatability2.png" width="300" alt="Hình 2">
+      <img src="Images/Repetabilite_flex_graph2.png" width="100%">
       <br/>
-     <b>Figure </b>
+     <b>Figure 30: Répétabilité du capteur flex – valeur moyenne et écart‑type</b>
     </td>
   </tr>
 </table>
@@ -311,7 +343,7 @@ Ce test est réalisé avec un capteur graphite 2B, car ce type de graphite a mon
 Les figures 1 et 2 montrent la valeur de la résistance mesurée pour chaque angle, avec une courbe correspondant à chaque répétition du test.
 Les figures 3 et 4 présentent la valeur moyenne de la résistance pour chaque angle. Les barres d’erreur représentent l’écart‑type calculé à partir des différentes mesures.
 Pour le capteur flex, la répétabilité est très bonne : les courbes sont presque superposées et l’écart‑type est très faible, au point d’être difficilement visible sur le graphique.
-Pour le capteur graphite 2B, on observe un léger décalage entre les différentes répétitions. La répétabilité est donc un peu moins bonne que celle du capteur flex. Toutefois, l’écart entre les mesures reste faible, de l’ordre de 0,5 % de la valeur moyenne
+Pour le capteur graphite 2B, on observe un léger décalage entre les différentes répétitions. La répétabilité est donc un peu moins bonne que celle du capteur flex. Toutefois, l’écart entre les mesures reste faible, de l’ordre de 0,5 % de la valeur moyenne.
 
 ### Datasheet
 ### Conclusion
