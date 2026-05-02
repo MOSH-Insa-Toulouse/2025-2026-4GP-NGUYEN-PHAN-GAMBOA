@@ -81,12 +81,12 @@ Pour limiter le bruit, en particulier le bruit du réseau électrique à 50 Hz, 
 <table>
   <tr>
     <td align="center">
-      <img src="Images/Capteur_graphite_schematic.png" height="150">
+      <img src="Images/Capteur_graphite_schematic.png" height="350">
       <br/>
       <b>Figure 4: Modèle électrique du capteur graphite</b>
     </td>
     <td align="center">
-      <img src="Images/Courant_graphite_LTSpice.png" height="150">
+      <img src="Images/Courant_graphite_LTSpice.png" height="350">
       <br/>
      <b>Figure 5: Courant du capteur graphite simulé sous LTSpice (sans bruit)</b>
     </td>
@@ -141,12 +141,12 @@ Les simulations montrent une tension d’entrée du circuit d’environ 18 mV av
 <table>
   <tr>
     <td align="center">
-      <img src="Images/Shield_face_derrière.jpg" width="400">
+      <img src="Images/Shield_face_derrière.jpg" height="250">
       <br/>
       <b>Figure 11: Face arrière du PCB</b>
     </td>
     <td align="center">
-      <img src="Images/Shield_face_avant.jpg" width="400">
+      <img src="Images/Shield_face_avant.jpg" height="250">
       <br/>
      <b>Figure 12: Face avant du PCB assemblé</b>
     </td>
@@ -311,14 +311,12 @@ Ce test est réalisé avec un capteur graphite 2B, car ce type de graphite a mon
 <table>
   <tr>
     <td align="center">
-      <img src="Images/Repetabilite_graphite_graph1.png" width="100%" alt="Hình 1">
+      <img src="Images/Repetabilite_graphite_graph1.png" height="250">
       <br/>
       <b>Figure 27: Répétabilité du capteur graphite – mesures répétées</b>
     </td>
     <td align="center">
-      <img src="Images/Repetabilite_flex_graph1.png" width="100%" alt="Hình 2">
-
-      <br/>
+      <img src="Images/Repetabilite_flex_graph1.png" height="250">
      <b>Figure 28: Répétabilité du capteur flex – mesures répétées</b>
     </td>
   </tr>
