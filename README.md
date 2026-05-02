@@ -73,7 +73,7 @@ En raison du courant très faible fourni par le capteur, nous avons utilisé un 
 Pour limiter le bruit, en particulier le bruit du réseau électrique à 50 Hz, trois filtres passe‑bas ont été ajoutés. Ces filtres permettent aussi de s’assurer que le signal en sortie du circuit est compatible avec la fréquence d’acquisition de l’Arduino.
 
 <div align="center">
-  <img src="Images/Circuit_analogique_schematic.png" width="600">
+  <img src="Images/Circuit_analogique_schematic.png" width="700">
   <br/>
   <b>Figure 3: Circuit d’amplification et de filtrage du signal</b>
 </div>  
@@ -81,12 +81,12 @@ Pour limiter le bruit, en particulier le bruit du réseau électrique à 50 Hz, 
 <table>
   <tr>
     <td align="center">
-      <img src="Images/Capteur_graphite_schematic.png" width="100%">
+      <img src="Images/Capteur_graphite_schematic.png" height="150">
       <br/>
       <b>Figure 4: Modèle électrique du capteur graphite</b>
     </td>
     <td align="center">
-      <img src="Images/Courant_graphite_LTSpice.png" width="100%">
+      <img src="Images/Courant_graphite_LTSpice.png" height="150">
       <br/>
      <b>Figure 5: Courant du capteur graphite simulé sous LTSpice (sans bruit)</b>
     </td>
@@ -116,7 +116,7 @@ Les simulations montrent une tension d’entrée du circuit d’environ 18 mV av
 
 ### Conception PCB avec Kidcad
 <div align="center">
-  <img src="Images/Schematic_KiCad.png" width="600">
+  <img src="Images/Schematic_KiCad.png" width="700">
   <br/>
   <b>Figure 8: Schéma électronique global du système sous KiCad</b>
 </div>  
@@ -141,12 +141,12 @@ Les simulations montrent une tension d’entrée du circuit d’environ 18 mV av
 <table>
   <tr>
     <td align="center">
-      <img src="Images/Shield_face_derrière.jpg" width="500">
+      <img src="Images/Shield_face_derrière.jpg" width="400">
       <br/>
       <b>Figure 11: Face arrière du PCB</b>
     </td>
     <td align="center">
-      <img src="Images/Shield_face_avant.jpg" width="500">
+      <img src="Images/Shield_face_avant.jpg" width="400">
       <br/>
      <b>Figure 12: Face avant du PCB assemblé</b>
     </td>
