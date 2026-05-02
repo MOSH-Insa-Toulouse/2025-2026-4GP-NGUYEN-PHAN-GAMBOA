@@ -141,12 +141,12 @@ Les simulations montrent une tension d’entrée du circuit d’environ 18 mV av
 <table>
   <tr>
     <td align="center">
-      <img src="Images/Shield_face_derrière.jpg" height="250">
+      <img src="Images/Shield_face_derrière.jpg" height="300" width="100">
       <br/>
       <b>Figure 11: Face arrière du PCB</b>
     </td>
     <td align="center">
-      <img src="Images/Shield_face_avant.jpg" height="250">
+      <img src="Images/Shield_face_avant.jpg" height="300"  width="100">
       <br/>
      <b>Figure 12: Face avant du PCB assemblé</b>
     </td>
@@ -290,7 +290,7 @@ Les résultats obtenus sont présentés sur les figures suivantes, montrant l’
   <b>Figure 25: Résultats de sensibilité du capteur flex en traction et en compression</b>
 </div>  
 
-Les mesures montrent une relation globalement linéaire entre la variation de résistance ΔR/R0\Delta R / R_0ΔR/R0​ et la déformation appliquée, aussi bien en traction qu’en compression. Cela indique que les capteurs réagissent de manière cohérente aux déformations imposées.
+Les mesures montrent une relation globalement linéaire entre la variation de résistance ΔR/R0​ et la déformation appliquée, aussi bien en traction qu’en compression. Cela indique que les capteurs réagissent de manière cohérente aux déformations imposées.
 
 Pour le capteur graphite, le graphite de type 2B présente la sensibilité la plus élevée, aussi bien en traction qu’en compression, comparé aux graphites HB, 4B et 6B. En comparaison avec le capteur flex :
 
@@ -311,13 +311,13 @@ Ce test est réalisé avec un capteur graphite 2B, car ce type de graphite a mon
 <table>
   <tr>
     <td align="center">
-      <img src="Images/Repetabilite_graphite_graph1.png" height="250">
+      <img src="Images/Repetabilite_graphite_graph1.png" height="250" width="100">
       <br/>
       <b>Figure 27: Répétabilité du capteur graphite – mesures répétées</b>
     </td>
     <td align="center">
-      <img src="Images/Repetabilite_flex_graph1.png" height="250">
-     <b>Figure 28: Répétabilité du capteur flex – mesures répétées</b>
+      <img src="Images/Repetabilite_flex_graph1.png" height="250"  width="100">
+      <b>Figure 28: Répétabilité du capteur flex – mesures répétées</b>
     </td>
   </tr>
 </table>
@@ -325,12 +325,12 @@ Ce test est réalisé avec un capteur graphite 2B, car ce type de graphite a mon
 <table>
   <tr>
     <td align="center">
-      <img src="Images/Repetabilite_graphite_graph2.png" width="100%">
+      <img src="Images/Repetabilite_graphite_graph2.png" height="300" width="100%">
       <br/>
       <b>Figure 29: Répétabilité du capteur graphite 2B – valeur moyenne et écart‑type</b>
     </td>
     <td align="center">
-      <img src="Images/Repetabilite_flex_graph2.png" width="100%">
+      <img src="Images/Repetabilite_flex_graph2.png" height="300" width="100%">
       <br/>
      <b>Figure 30: Répétabilité du capteur flex – valeur moyenne et écart‑type</b>
     </td>
