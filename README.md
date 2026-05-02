@@ -138,11 +138,11 @@ Les simulations montrent une tension d’entrée du circuit d’environ 18 mV av
 <table width="100%">
   <tr>
     <td width="50%" align="center">
-      <img src="Images/Shield_face_arriere.jpg" height="250"><br>
+      <img src="Images/Shield_face_arriere.jpg" width="100%"><br>
       <em>Figure 11: Face arrière du PCB</em>
     </td>
     <td width="50%" align="center">
-      <img src="Images/Shield_face_avant.jpg" height="250"><br>
+      <img src="Images/Shield_face_avant.jpg" width="100%"><br>
       <em>Figure 12: Face avant du PCB </em>
     </td>
   </tr>
