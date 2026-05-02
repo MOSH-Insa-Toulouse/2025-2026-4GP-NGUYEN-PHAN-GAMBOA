@@ -24,7 +24,7 @@ L’objectif est d’évaluer les performances, la fiabilité de ce capteur à f
 
 ## Principe de fonctionnement du capteur en graphite
 <div align="center">
-  <img src="Images/Schema_graphite_physics.png" width="500">
+  <img src="Images/Schema_graphite_physics.png" width="400">
   <br/>
   <b>Figure 1: Principe de fonctionnement du capteur graphite en traction et en compression</b>
 </div>
@@ -39,7 +39,7 @@ Afin d’atteindre les objectifs fixés, le travail a été divisé en deux tâc
 
 2. la réalisation de bancs de test pour évaluer l’efficacité de ce capteur
 <div align="center">
-  <img src="Images/Montage_de_mesure.jpg" width="100%">
+  <img src="Images/Montage_de_mesure.jpg" width="400">
   <br/>
   <b>Figure 2: Montage expérimental de mesure du capteur graphite</b>
 </div>
@@ -73,7 +73,7 @@ En raison du courant très faible fourni par le capteur, nous avons utilisé un 
 Pour limiter le bruit, en particulier le bruit du réseau électrique à 50 Hz, trois filtres passe‑bas ont été ajoutés. Ces filtres permettent aussi de s’assurer que le signal en sortie du circuit est compatible avec la fréquence d’acquisition de l’Arduino.
 
 <div align="center">
-  <img src="Images/Circuit_analogique_schematic.png" width="100%">
+  <img src="Images/Circuit_analogique_schematic.png" width="400">
   <br/>
   <b>Figure 3: Circuit d’amplification et de filtrage du signal</b>
 </div>  
@@ -116,7 +116,7 @@ Les simulations montrent une tension d’entrée du circuit d’environ 18 mV av
 
 ### Conception PCB avec Kidcad
 <div align="center">
-  <img src="Images/Schematic_KiCad.png" width="100%">
+  <img src="Images/Schematic_KiCad.png" width="400">
   <br/>
   <b>Figure 8: Schéma électronique global du système sous KiCad</b>
 </div>  
@@ -169,13 +169,13 @@ Ce programme permet :
 Ces deux premières fonctionnalités sont pilotées via un écran OLED pour l’affichage et un encodeur rotatif utilisé pour la navigation et la sélection dans les menus.
 
 <div align="center">
-  <img src="Images/Menu_principal_oled.jpg" width="100%">
+  <img src="Images/Menu_principal_oled.jpg" width="400">
   <br/>
   <b>Figure 13: Menu principal affiché sur l’écran OLED</b>
 </div> 
   <br/>
 <div align="center">
-  <img src="Images/Gain_menu_oled.jpg" width="100%">
+  <img src="Images/Gain_menu_oled.jpg" width="400">
   <br/>
   <b>Figure 14: Menu de réglage du gain affiché sur l’écran OLED</b>
 </div>
@@ -229,13 +229,13 @@ Cette application communique avec l’Arduino via une connexion Bluetooth et int
 * Mesure ponctuelle de la résistance du capteur sélectionné lors de l’appui sur le bouton Measure. L’utilisateur peut saisir la valeur de référence du capteur à l’état non déformé, puis l’application calcule automatiquement le rapport ΔR/R0. (Figure)
 
 <div align="center">
-  <img src="Images/Menu_principal_app.jpg" width="100%">
+  <img src="Images/Menu_principal_app.jpg" width="400">
   <br/>
   <b>Figure 18: Interface principale de l’application Android</b>
 </div>  
   <br/>
 
-<video src="Images/Signal_real_time_menu.mp4" controls width="100%">
+<video src="Images/Signal_real_time_menu.mp4" controls width="400">
     Votre navigateur ne prend pas en charge la vidéo.  
 </video>
   <b>Figure 19: Menu principal</b>
@@ -243,7 +243,7 @@ Cette application communique avec l’Arduino via une connexion Bluetooth et int
 <br/>
 
 <div align="center">
-  <img src="Images/Mesuring_resistance_menu.png" width="100%">
+  <img src="Images/Mesuring_resistance_menu.png" width="500">
   <br/>
   <b>Figure 20: Interface de mesure de la résistance dans l’application Android</b>
 </div>
@@ -256,7 +256,7 @@ Ces bancs permettent d’analyser en particulier la sensibilité et la rentabili
 Pour mesurer la sensibilité des capteurs, un modèle mécanique imprimé en 3D a été utilisé.
 
 <div align="center">
-  <img src="Images/Test_bench_sensibilite.jpg" width="100%">
+  <img src="Images/Test_bench_sensibilite.jpg" width="400">
   <br/>
   <b>Figure 21: Protocole de banc de test de sensibilité</b>
 </div>
@@ -268,7 +268,7 @@ La même procédure est appliquée au capteur graphite et au capteur flex, afin 
 Pour le capteur graphite, les mesures ont été réalisées avec différents types de graphite : HB, 2B, 4B et 6B.
 Les résultats obtenus sont présentés sur les figures suivantes, montrant l’évolution du rapport ΔR/R0 en fonction de la déformation, en traction et en compression.
 <div align="center">
-  <img src="Images/Tension_graph.png" width="100%">
+  <img src="Images/Tension_graph.png" width="400">
   <br/>
   <b>Figure 22: Variation du rapport ΔR/R0​ en fonction de la déformation en tension pour différents types de graphite et le capteur flex</b>
 </div>
@@ -276,19 +276,19 @@ Les résultats obtenus sont présentés sur les figures suivantes, montrant l’
 
 
 <div align="center">
-  <img src="Images/Compression_graph.png" width="100%">
+  <img src="Images/Compression_graph.png" width="400">
   <br/>
   <b>Figure 23: Variation du rapport ΔR/R0​ en fonction de la déformation en compression pour différents types de graphite et le capteur flex</b>
 </div>
 
 ##### Résultat
 <div align="center">
-  <img src="Images/Sensibilite_graphite.png" width="100%">
+  <img src="Images/Sensibilite_graphite.png" width="400">
   <br/>
   <b>Figure 24: Résultats de sensibilité des capteurs graphite (HB, 2B, 4B, 6B)</b>
 
   <br/>
-  <img src="Images/Sensibilite_flex.png" width="100%">
+  <img src="Images/Sensibilite_flex.png" width="400">
   <b>Figure 25: Résultats de sensibilité du capteur flex en traction et en compression</b>
 </div>  
 
@@ -304,7 +304,7 @@ Comme montré sur les figures, un servomoteur est relié au capteur à l’aide 
 Le servomoteur applique successivement un angle de 0° puis de 120° au capteur. Ce cycle est répété cinq fois de suite.
 Ce test est réalisé avec un capteur graphite 2B, car ce type de graphite a montré la meilleure sensibilité lors des essais précédents. Le même protocole est également appliqué au capteur flex afin de pouvoir comparer les résultats.
 <div align="center">
-  <img src="Images/Test_bench_servomoteur.jpg" width="100%">
+  <img src="Images/Test_bench_servomoteur.jpg" width="400">
   <br/>
   <b>Figure 26: Protocole de banc de test de répétabilité avec servomoteur</b>
 </div>
