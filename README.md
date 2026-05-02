@@ -141,12 +141,12 @@ Les simulations montrent une tension d’entrée du circuit d’environ 18 mV av
 <table>
   <tr>
     <td align="center">
-      <img src="Images/Shield_face_derrière.jpg" height="300" width="100">
+      <img src="Images/Shield_face_derrière.jpg" height="300" width="100%">
       <br/>
       <b>Figure 11: Face arrière du PCB</b>
     </td>
     <td align="center">
-      <img src="Images/Shield_face_avant.jpg" height="300"  width="100">
+      <img src="Images/Shield_face_avant.jpg" height="300"  width="100%">
       <br/>
      <b>Figure 12: Face avant du PCB assemblé</b>
     </td>
@@ -235,12 +235,11 @@ Cette application communique avec l’Arduino via une connexion Bluetooth et int
 </div>  
   <br/>
 
-<video src="Images/Signal_real_time_menu.mp4" controls width="400">
-    Votre navigateur ne prend pas en charge la vidéo.  
-</video>
-  <b>Figure 19: Menu principal</b>
-
-<br/>
+<p align="center">
+  <img src="Images/Signal_real_time_menu.gif" width="300"/>
+  <br/>
+  <b>Figure 19: Démonstration de la variation de résistance du capteur en graphite sous déformation sur l'application Android</b>
+</p>
 
 <div align="center">
   <img src="Images/Mesuring_resistance_menu.png" width="600">
@@ -311,12 +310,12 @@ Ce test est réalisé avec un capteur graphite 2B, car ce type de graphite a mon
 <table>
   <tr>
     <td align="center">
-      <img src="Images/Repetabilite_graphite_graph1.png" height="250" width="100">
+      <img src="Images/Repetabilite_graphite_graph1.png" height="250" width="100%">
       <br/>
       <b>Figure 27: Répétabilité du capteur graphite – mesures répétées</b>
     </td>
     <td align="center">
-      <img src="Images/Repetabilite_flex_graph1.png" height="250"  width="100">
+      <img src="Images/Repetabilite_flex_graph1.png" height="250"  width="100%">
       <b>Figure 28: Répétabilité du capteur flex – mesures répétées</b>
     </td>
   </tr>
