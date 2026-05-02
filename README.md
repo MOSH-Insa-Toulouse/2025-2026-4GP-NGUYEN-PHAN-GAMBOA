@@ -73,7 +73,7 @@ En raison du courant très faible fourni par le capteur, nous avons utilisé un 
 Pour limiter le bruit, en particulier le bruit du réseau électrique à 50 Hz, trois filtres passe‑bas ont été ajoutés. Ces filtres permettent aussi de s’assurer que le signal en sortie du circuit est compatible avec la fréquence d’acquisition de l’Arduino.
 
 <div align="center">
-  <img src="Images/Circuit_analogique_schematic.png" width="400">
+  <img src="Images/Circuit_analogique_schematic.png" width="600">
   <br/>
   <b>Figure 3: Circuit d’amplification et de filtrage du signal</b>
 </div>  
@@ -116,7 +116,7 @@ Les simulations montrent une tension d’entrée du circuit d’environ 18 mV av
 
 ### Conception PCB avec Kidcad
 <div align="center">
-  <img src="Images/Schematic_KiCad.png" width="400">
+  <img src="Images/Schematic_KiCad.png" width="600">
   <br/>
   <b>Figure 8: Schéma électronique global du système sous KiCad</b>
 </div>  
@@ -141,12 +141,12 @@ Les simulations montrent une tension d’entrée du circuit d’environ 18 mV av
 <table>
   <tr>
     <td align="center">
-      <img src="Images/Shield_face_derrière.jpg" width="100%">
+      <img src="Images/Shield_face_derrière.jpg" width="500">
       <br/>
       <b>Figure 11: Face arrière du PCB</b>
     </td>
     <td align="center">
-      <img src="Images/Shield_face_avant.jpg" width="100%">
+      <img src="Images/Shield_face_avant.jpg" width="500">
       <br/>
      <b>Figure 12: Face avant du PCB assemblé</b>
     </td>
@@ -229,7 +229,7 @@ Cette application communique avec l’Arduino via une connexion Bluetooth et int
 * Mesure ponctuelle de la résistance du capteur sélectionné lors de l’appui sur le bouton Measure. L’utilisateur peut saisir la valeur de référence du capteur à l’état non déformé, puis l’application calcule automatiquement le rapport ΔR/R0. (Figure)
 
 <div align="center">
-  <img src="Images/Menu_principal_app.jpg" width="400">
+  <img src="Images/Menu_principal_app.jpg" width="300">
   <br/>
   <b>Figure 18: Interface principale de l’application Android</b>
 </div>  
@@ -243,7 +243,7 @@ Cette application communique avec l’Arduino via une connexion Bluetooth et int
 <br/>
 
 <div align="center">
-  <img src="Images/Mesuring_resistance_menu.png" width="500">
+  <img src="Images/Mesuring_resistance_menu.png" width="600">
   <br/>
   <b>Figure 20: Interface de mesure de la résistance dans l’application Android</b>
 </div>
@@ -268,7 +268,7 @@ La même procédure est appliquée au capteur graphite et au capteur flex, afin 
 Pour le capteur graphite, les mesures ont été réalisées avec différents types de graphite : HB, 2B, 4B et 6B.
 Les résultats obtenus sont présentés sur les figures suivantes, montrant l’évolution du rapport ΔR/R0 en fonction de la déformation, en traction et en compression.
 <div align="center">
-  <img src="Images/Tension_graph.png" width="400">
+  <img src="Images/Tension_graph.png" width="600">
   <br/>
   <b>Figure 22: Variation du rapport ΔR/R0​ en fonction de la déformation en tension pour différents types de graphite et le capteur flex</b>
 </div>
@@ -276,19 +276,17 @@ Les résultats obtenus sont présentés sur les figures suivantes, montrant l’
 
 
 <div align="center">
-  <img src="Images/Compression_graph.png" width="400">
+  <img src="Images/Compression_graph.png" width="600">
   <br/>
   <b>Figure 23: Variation du rapport ΔR/R0​ en fonction de la déformation en compression pour différents types de graphite et le capteur flex</b>
 </div>
 
 ##### Résultat
 <div align="center">
-  <img src="Images/Sensibilite_graphite.png" width="400">
+  <img src="Images/Sensibilite_graphite.png" width="600">
   <br/>
   <b>Figure 24: Résultats de sensibilité des capteurs graphite (HB, 2B, 4B, 6B)</b>
-
-  <br/>
-  <img src="Images/Sensibilite_flex.png" width="400">
+  <img src="Images/Sensibilite_flex.png" width="600">
   <b>Figure 25: Résultats de sensibilité du capteur flex en traction et en compression</b>
 </div>  
 
@@ -304,7 +302,7 @@ Comme montré sur les figures, un servomoteur est relié au capteur à l’aide 
 Le servomoteur applique successivement un angle de 0° puis de 120° au capteur. Ce cycle est répété cinq fois de suite.
 Ce test est réalisé avec un capteur graphite 2B, car ce type de graphite a montré la meilleure sensibilité lors des essais précédents. Le même protocole est également appliqué au capteur flex afin de pouvoir comparer les résultats.
 <div align="center">
-  <img src="Images/Test_bench_servomoteur.jpg" width="400">
+  <img src="Images/Test_bench_servomoteur.jpg" width="500">
   <br/>
   <b>Figure 26: Protocole de banc de test de répétabilité avec servomoteur</b>
 </div>
