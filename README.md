@@ -24,12 +24,12 @@ L’objectif est d’évaluer les performances, la fiabilité de ce capteur à f
 
 ## Principe de fonctionnement du capteur en graphite
 <div align="center">
-  <img src="Images/Schema_graphite_physics.png" width="100%">
+  <img src="Images/Schema_graphite_physics.png" width="500">
   <br/>
   <b>Figure 1: Principe de fonctionnement du capteur graphite en traction et en compression</b>
-
+</div>
   <br/>
-<div style="text-align: left;">
+
 La mine de crayon est déposée sur le papier de manière mécanique. Elle pénètre dans la structure poreuse du papier et forme une piste conductrice composée de particules de graphite mélangées à un liant isolant, comme l’argile. Ces particules créent un réseau conducteur à l’intérieur des fibres du papier. Quand le papier est soumis à une contrainte mécanique, ce réseau change : sous traction, les contacts entre les particules diminuent, tandis que sous compression, ils augmentent. Ces modifications provoquent alors des variations mesurables de la résistance électrique.
 
 ## Réalisation du projet
@@ -42,7 +42,7 @@ Afin d’atteindre les objectifs fixés, le travail a été divisé en deux tâc
   <img src="Images/Montage_de_mesure.jpg" width="100%">
   <br/>
   <b>Figure 2: Montage expérimental de mesure du capteur graphite</b>
-<div style="text-align: left;">
+</div>
 
 ### Matériaux nécessaire
 Pour réaliser le shield, nous avons besoin du matériel suivant :
@@ -76,7 +76,7 @@ Pour limiter le bruit, en particulier le bruit du réseau électrique à 50 Hz, 
   <img src="Images/Circuit_analogique_schematic.png" width="100%">
   <br/>
   <b>Figure 3: Circuit d’amplification et de filtrage du signal</b>
-  
+</div>  
   <br/>
 <table>
   <tr>
@@ -93,7 +93,7 @@ Pour limiter le bruit, en particulier le bruit du réseau électrique à 50 Hz, 
   </tr>
 </table>
 
-<div style="text-align: left;">
+
 
 Pour la simulation, le capteur graphite réel est modélisé dans LTSpice par un circuit électronique dans le figure , qui produit une sortie de courant d’environ 150 nA conformément à la valeur réalité. Le sous‑ensemble C3, R5 et le générateur V2 permet de simuler les bruits provenant de l’environnement.
 
@@ -111,7 +111,7 @@ Pour la simulation, le capteur graphite réel est modélisé dans LTSpice par un
     </td>
   </tr>
 </table>
-<div style="text-align: left;">
+
 Les simulations montrent une tension d’entrée du circuit d’environ 18 mV avant filtrage et amplification. En sortie, le signal est correctement amplifié et filtré, comme illustré sur la figure correspondante. Le niveau d’amplification obtenu dépend directement de la valeur choisie pour R2.
 
 ### Conception PCB avec Kidcad
@@ -119,7 +119,7 @@ Les simulations montrent une tension d’entrée du circuit d’environ 18 mV av
   <img src="Images/Schematic_KiCad.png" width="100%">
   <br/>
   <b>Figure 8: Schéma électronique global du système sous KiCad</b>
-  
+</div>  
   <br/>
 <table>
   <tr>
@@ -135,7 +135,7 @@ Les simulations montrent une tension d’entrée du circuit d’environ 18 mV av
     </td>9
   </tr>
 </table>
-<div style="text-align: left;">
+
 
 ### Réalisation du Shield
 <table>
@@ -152,7 +152,7 @@ Les simulations montrent une tension d’entrée du circuit d’environ 18 mV av
     </td>
   </tr>
 </table>
-<div style="text-align: left;">
+
 
 ### Code Arduino
 Nous avons développé un programme sous Arduino IDE.  Dans le code, nous avons ajouté les librairies Adafruit_SSD1306 pour piloter l'écran OLED et SoftwareSerial pour le Bluetooth HC-05. Pour rendre le code plus clair et mieux organisé, le programme Arduino est divisé en plusieurs fichiers :
@@ -172,12 +172,13 @@ Ces deux premières fonctionnalités sont pilotées via un écran OLED pour l’
   <img src="Images/Menu_principal_oled.jpg" width="100%">
   <br/>
   <b>Figure 13: Menu principal affiché sur l’écran OLED</b>
- 
+</div> 
   <br/>
 <div align="center">
   <img src="Images/Gain_menu_oled.jpg" width="100%">
   <br/>
   <b>Figure 14: Menu de réglage du gain affiché sur l’écran OLED</b>
+</div>
   <br/>
   Il suffit d’appuyer sur l’encodeur pour revenir au menu principal
   
@@ -201,7 +202,7 @@ Ces deux premières fonctionnalités sont pilotées via un écran OLED pour l’
     </td>
   </tr>
 </table>
-<div style="text-align: left;">
+
 
 Lorsque l’utilisateur entre dans le menu du servomoteur, l’écran de la figure 1 s’affiche.
 En appuyant sur l’encodeur, il est possible de sélectionner un angle : le texte « Choose an angle » passe en majuscules (figure 2).
@@ -231,7 +232,7 @@ Cette application communique avec l’Arduino via une connexion Bluetooth et int
   <img src="Images/Menu_principal_app.jpg" width="100%">
   <br/>
   <b>Figure 18: Interface principale de l’application Android</b>
-  
+</div>  
   <br/>
 
 <video src="Images/Signal_real_time_menu.mp4" controls width="100%">
@@ -245,7 +246,7 @@ Cette application communique avec l’Arduino via une connexion Bluetooth et int
   <img src="Images/Mesuring_resistance_menu.png" width="100%">
   <br/>
   <b>Figure 20: Interface de mesure de la résistance dans l’application Android</b>
-<div style="text-align: left;">
+</div>
 
 
 ### Bancs de test
@@ -258,7 +259,7 @@ Pour mesurer la sensibilité des capteurs, un modèle mécanique imprimé en 3D 
   <img src="Images/Test_bench_sensibilite.jpg" width="100%">
   <br/>
   <b>Figure 21: Protocole de banc de test de sensibilité</b>
-<div style="text-align: left;"> 
+</div>
 
 Ce modèle est constitué de plusieurs arcs de cercle de rayons différents, chaque rayon correspondant à un niveau de déformation différent appliqué au capteur.
 
@@ -270,7 +271,7 @@ Les résultats obtenus sont présentés sur les figures suivantes, montrant l’
   <img src="Images/Tension_graph.png" width="100%">
   <br/>
   <b>Figure 22: Variation du rapport ΔR/R0​ en fonction de la déformation en tension pour différents types de graphite et le capteur flex</b>
-
+</div>
   <br/>
 
 
@@ -278,7 +279,7 @@ Les résultats obtenus sont présentés sur les figures suivantes, montrant l’
   <img src="Images/Compression_graph.png" width="100%">
   <br/>
   <b>Figure 23: Variation du rapport ΔR/R0​ en fonction de la déformation en compression pour différents types de graphite et le capteur flex</b>
-<div style="text-align: left;"> 
+</div>
 
 ##### Résultat
 <div align="center">
@@ -289,7 +290,7 @@ Les résultats obtenus sont présentés sur les figures suivantes, montrant l’
   <br/>
   <img src="Images/Sensibilite_flex.png" width="100%">
   <b>Figure 25: Résultats de sensibilité du capteur flex en traction et en compression</b>
-<div style="text-align: left;">   
+</div>  
 
 Les mesures montrent une relation globalement linéaire entre la variation de résistance ΔR/R0\Delta R / R_0ΔR/R0​ et la déformation appliquée, aussi bien en traction qu’en compression. Cela indique que les capteurs réagissent de manière cohérente aux déformations imposées.
 
@@ -306,7 +307,7 @@ Ce test est réalisé avec un capteur graphite 2B, car ce type de graphite a mon
   <img src="Images/Test_bench_servomoteur.jpg" width="100%">
   <br/>
   <b>Figure 26: Protocole de banc de test de répétabilité avec servomoteur</b>
-<div style="text-align: left;"> 
+</div>
 
 ##### Résultat
 <table>
@@ -339,7 +340,7 @@ Ce test est réalisé avec un capteur graphite 2B, car ce type de graphite a mon
     </td>
   </tr>
 </table>
-<div style="text-align: left;">
+
 Les figures 1 et 2 montrent la valeur de la résistance mesurée pour chaque angle, avec une courbe correspondant à chaque répétition du test.
 Les figures 3 et 4 présentent la valeur moyenne de la résistance pour chaque angle. Les barres d’erreur représentent l’écart‑type calculé à partir des différentes mesures.
 Pour le capteur flex, la répétabilité est très bonne : les courbes sont presque superposées et l’écart‑type est très faible, au point d’être difficilement visible sur le graphique.
