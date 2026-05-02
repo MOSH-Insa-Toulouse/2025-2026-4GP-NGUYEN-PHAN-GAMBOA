@@ -26,7 +26,7 @@ L’objectif est d’évaluer les performances, la fiabilité de ce capteur à f
 <div align="center">
   <img src="Images/Schema_graphite_physics.png" width="400">
   <br/>
-  <b>Figure 1: Principe de fonctionnement du capteur graphite en traction et en compression</b>
+  <em>Figure 1: Principe de fonctionnement du capteur graphite en traction et en compression</em>
 </div>
   <br/>
 
@@ -41,7 +41,7 @@ Afin d’atteindre les objectifs fixés, le travail a été divisé en deux tâc
 <div align="center">
   <img src="Images/Montage_de_mesure.jpg" width="400">
   <br/>
-  <b>Figure 2: Montage expérimental de mesure du capteur graphite</b>
+  <em>Figure 2: Montage expérimental de mesure du capteur graphite</em>
 </div>
 
 ### Matériaux nécessaire
@@ -75,7 +75,7 @@ Pour limiter le bruit, en particulier le bruit du réseau électrique à 50 Hz, 
 <div align="center">
   <img src="Images/Circuit_analogique_schematic.png" width="700">
   <br/>
-  <b>Figure 3: Circuit d’amplification et de filtrage du signal</b>
+  <em>Figure 3: Circuit d’amplification et de filtrage du signal</em>
 </div>  
   <br/>
 
@@ -86,7 +86,7 @@ Pour limiter le bruit, en particulier le bruit du réseau électrique à 50 Hz, 
       <em>Figure 4: Modèle électrique du capteur graphite</em>
     </td>
     <td width="50%" align="center">
-      <img src="Images/Courant_graphite_LTSpice.png" height="260"><br>
+      <img src="Images/Courant_graphite_LTSpice.png" height="255"><br>
       <em>Figure 5: Courant du capteur graphite simulé sous LTSpice (sans bruit)</em>
     </td>
   </tr>
@@ -99,12 +99,12 @@ Pour la simulation, le capteur graphite réel est modélisé dans LTSpice par un
     <td align="center">
       <img src="Images/Tension_entree_LTSpice.png" height="450" width="100%" alt="Hình 1">
       <br/>
-      <b>Figure 6: Tension d’entrée du circuit d'amplificateur simulée sous LTSpice</b>
+      <em>Figure 6: Tension d’entrée du circuit d'amplificateur simulée sous LTSpice</em>
     </td>
     <td align="center">
       <img src="Images/Tension_sortie_LTSpice.png" height="450" width="100%" alt="Hình 2">
       <br/>
-     <b>Figure 7: Tension de sortie du circuit (V_ADC) simulée sous LTSpice</b>
+     <em>Figure 7: Tension de sortie du circuit (V_ADC) simulée sous LTSpice</em>
     </td>
   </tr>
 </table>
@@ -115,7 +115,7 @@ Les simulations montrent une tension d’entrée du circuit d’environ 18 mV av
 <div align="center">
   <img src="Images/Schematic_KiCad.png" width="700">
   <br/>
-  <b>Figure 8: Schéma électronique global du système sous KiCad</b>
+  <em>Figure 8: Schéma électronique global du système sous KiCad</em>
 </div>  
   <br/>
 <table>
@@ -123,12 +123,12 @@ Les simulations montrent une tension d’entrée du circuit d’environ 18 mV av
     <td align="center">
       <img src="Images/PCB_Kicad.png" width="100%">
       <br/>
-      <b>Figure 9: Routage du PCB conçu sous KiCad </b>
+      <em>Figure 9: Routage du PCB conçu sous KiCad </em>
     </td>
     <td align="center">
       <img src="Images/PCB_3D_Kicad.png" width="100%">
       <br/>
-     <b>Figure 10: Vue 3D du PCB conçu sous KiCad</b>
+     <em>Figure 10: Vue 3D du PCB conçu sous KiCad</em>
     </td>9
   </tr>
 </table>
@@ -138,10 +138,12 @@ Les simulations montrent une tension d’entrée du circuit d’environ 18 mV av
 <table width="100%">
   <tr>
     <td width="50%" align="center">
-      <img src="Images/Shield_face_arriere.jpg" height="250">
+      <img src="Images/Shield_face_arriere.jpg" height="250"><br>
+      <em>Figure 11: Face arrière du PCB</em>
     </td>
     <td width="50%" align="center">
-      <img src="Images/Shield_face_avant.jpg" height="250">
+      <img src="Images/Shield_face_avant.jpg" height="250"><br>
+      <em>Figure 12: Face avant du PCB </em>
     </td>
   </tr>
 </table>
@@ -164,13 +166,13 @@ Ces deux premières fonctionnalités sont pilotées via un écran OLED pour l’
 <div align="center">
   <img src="Images/Menu_principal_oled.jpg" width="400">
   <br/>
-  <b>Figure 13: Menu principal affiché sur l’écran OLED</b>
+  <em>Figure 13: Menu principal affiché sur l’écran OLED</em>
 </div> 
   <br/>
 <div align="center">
   <img src="Images/Gain_menu_oled.jpg" width="400">
   <br/>
-  <b>Figure 14: Menu de réglage du gain affiché sur l’écran OLED</b>
+  <em>Figure 14: Menu de réglage du gain affiché sur l’écran OLED</em>
 </div>
   <br/>
   Il suffit d’appuyer sur l’encodeur pour revenir au menu principal
@@ -181,17 +183,17 @@ Ces deux premières fonctionnalités sont pilotées via un écran OLED pour l’
     <td align="center">
       <img src="Images/Servomoteur_menu1.jpg" width="100%">
       <br/>
-      <b>Figure 15: Menu de sélection de l’angle du servomoteur affiché sur l’écran OLED</b>
+      <em>Figure 15: Menu de sélection de l’angle du servomoteur affiché sur l’écran OLED</em>
     </td>
     <td align="center">
       <img src="Images/Servomoteur_menu2.jpg" width="100%">
       <br/>
-     <b>Figure 16: Menu de sélection de l’angle du servomoteur affiché sur l’écran OLED</b>
+     <em>Figure 16: Menu de sélection de l’angle du servomoteur affiché sur l’écran OLED</em>
     </td>
     <td align="center">
       <img src="Images/Servomoteur_menu3.jpg" width="100%">
       <br/>
-      <b>Figure 17: Menu d'application de l’angle du servomoteur affiché sur l’écran OLED</b>
+      <em>Figure 17: Menu d'application de l’angle du servomoteur affiché sur l’écran OLED</em>
     </td>
   </tr>
 </table>
@@ -224,20 +226,20 @@ Cette application communique avec l’Arduino via une connexion Bluetooth et int
 <div align="center">
   <img src="Images/Menu_principal_app.jpg" width="300">
   <br/>
-  <b>Figure 18: Interface principale de l’application Android</b>
+  <em>Figure 18: Interface principale de l’application Android</em>
 </div>  
   <br/>
 
 <p align="center">
   <img src="Images/Signal_real_time_menu.gif" width="300"/>
   <br/>
-  <b>Figure 19: Démonstration de la variation de résistance du capteur en graphite sous déformation sur l'application Android</b>
+  <em>Figure 19: Démonstration de la variation de résistance du capteur en graphite sous déformation sur l'application Android</em>
 </p>
 
 <div align="center">
   <img src="Images/Mesuring_resistance_menu.png" width="600">
   <br/>
-  <b>Figure 20: Interface de mesure de la résistance dans l’application Android</b>
+  <em>Figure 20: Interface de mesure de la résistance dans l’application Android</em>
 </div>
 
 
@@ -250,7 +252,7 @@ Pour mesurer la sensibilité des capteurs, un modèle mécanique imprimé en 3D 
 <div align="center">
   <img src="Images/Test_bench_sensibilite.jpg" width="400">
   <br/>
-  <b>Figure 21: Protocole de banc de test de sensibilité</b>
+  <em>Figure 21: Protocole de banc de test de sensibilité</em>
 </div>
 
 Ce modèle est constitué de plusieurs arcs de cercle de rayons différents, chaque rayon correspondant à un niveau de déformation différent appliqué au capteur.
@@ -262,7 +264,7 @@ Les résultats obtenus sont présentés sur les figures suivantes, montrant l’
 <div align="center">
   <img src="Images/Tension_graph.png" width="600">
   <br/>
-  <b>Figure 22: Variation du rapport ΔR/R0​ en fonction de la déformation en tension pour différents types de graphite et le capteur flex</b>
+  <em>Figure 22: Variation du rapport ΔR/R0​ en fonction de la déformation en tension pour différents types de graphite et le capteur flex</em>
 </div>
   <br/>
 
@@ -270,17 +272,17 @@ Les résultats obtenus sont présentés sur les figures suivantes, montrant l’
 <div align="center">
   <img src="Images/Compression_graph.png" width="600">
   <br/>
-  <b>Figure 23: Variation du rapport ΔR/R0​ en fonction de la déformation en compression pour différents types de graphite et le capteur flex</b>
+  <em>Figure 23: Variation du rapport ΔR/R0​ en fonction de la déformation en compression pour différents types de graphite et le capteur flex</em>
 </div>
 
 ##### Résultat
 <div align="center">
   <img src="Images/Sensibilite_graphite.png" width="600">
   <br/>
-  <b>Figure 24: Résultats de sensibilité des capteurs graphite (HB, 2B, 4B, 6B)</b>
+  <em>Figure 24: Résultats de sensibilité des capteurs graphite (HB, 2B, 4B, 6B)</em>
   <img src="Images/Sensibilite_flex.png" width="600">
   <br/>
-  <b>Figure 25: Résultats de sensibilité du capteur flex en traction et en compression</b>
+  <em>Figure 25: Résultats de sensibilité du capteur flex en traction et en compression</em>
 </div>  
 
 Les mesures montrent une relation globalement linéaire entre la variation de résistance ΔR/R0​ et la déformation appliquée, aussi bien en traction qu’en compression. Cela indique que les capteurs réagissent de manière cohérente aux déformations imposées.
@@ -297,7 +299,7 @@ Ce test est réalisé avec un capteur graphite 2B, car ce type de graphite a mon
 <div align="center">
   <img src="Images/Test_bench_servomoteur.jpg" width="500">
   <br/>
-  <b>Figure 26: Protocole de banc de test de répétabilité avec servomoteur</b>
+  <em>Figure 26: Protocole de banc de test de répétabilité avec servomoteur</em>
 </div>
 
 ##### Résultat
@@ -318,12 +320,12 @@ Ce test est réalisé avec un capteur graphite 2B, car ce type de graphite a mon
     <td align="center">
       <img src="Images/Repetabilite_graphite_graph2.png" height="300" width="100%">
       <br/>
-      <b>Figure 29: Répétabilité du capteur graphite 2B – valeur moyenne et écart‑type</b>
+      <em>Figure 29: Répétabilité du capteur graphite 2B – valeur moyenne et écart‑type</em>
     </td>
     <td align="center">
       <img src="Images/Repetabilite_flex_graph2.png" height="300" width="100%">
       <br/>
-     <b>Figure 30: Répétabilité du capteur flex – valeur moyenne et écart‑type</b>
+     <em>Figure 30: Répétabilité du capteur flex – valeur moyenne et écart‑type</em>
     </td>
   </tr>
 </table>
