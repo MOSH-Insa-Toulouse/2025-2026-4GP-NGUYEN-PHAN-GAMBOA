@@ -81,12 +81,12 @@ Pour limiter le bruit, en particulier le bruit du réseau électrique à 50 Hz, 
 <table>
   <tr>
     <td align="center">
-      <img src="Images/Capteur_graphite_schematic.png" height="350">
+      <img src="Images/Capteur_graphite_schematic.png" height="450" width="100%">
       <br/>
       <b>Figure 4: Modèle électrique du capteur graphite</b>
     </td>
     <td align="center">
-      <img src="Images/Courant_graphite_LTSpice.png" height="350">
+      <img src="Images/Courant_graphite_LTSpice.png" height="450" width="100%">
       <br/>
      <b>Figure 5: Courant du capteur graphite simulé sous LTSpice (sans bruit)</b>
     </td>
@@ -100,12 +100,12 @@ Pour la simulation, le capteur graphite réel est modélisé dans LTSpice par un
 <table>
   <tr>
     <td align="center">
-      <img src="Images/Tension_entree_LTSpice.png" width="100%" alt="Hình 1">
+      <img src="Images/Tension_entree_LTSpice.png" height="450" width="100%" alt="Hình 1">
       <br/>
       <b>Figure 6: Tension d’entrée du circuit d'amplificateur simulée sous LTSpice</b>
     </td>
     <td align="center">
-      <img src="Images/Tension_sortie_LTSpice.png" width="100%" alt="Hình 2">
+      <img src="Images/Tension_sortie_LTSpice.png" height="450" width="100%" alt="Hình 2">
       <br/>
      <b>Figure 7: Tension de sortie du circuit (V_ADC) simulée sous LTSpice</b>
     </td>
@@ -138,17 +138,13 @@ Les simulations montrent une tension d’entrée du circuit d’environ 18 mV av
 
 
 ### Réalisation du Shield
-<table>
+<table width="100%">
   <tr>
-    <td align="center">
-      <img src="Images/Shield_face_derrière.jpg" height="300" width="100%">
-      <br/>
-      <b>Figure 11: Face arrière du PCB</b>
+    <td width="50%" align="center">
+      <img src="Images/Shield_face_arriere.jpg" height="250">
     </td>
-    <td align="center">
-      <img src="Images/Shield_face_avant.jpg" height="300"  width="100%">
-      <br/>
-     <b>Figure 12: Face avant du PCB assemblé</b>
+    <td width="50%" align="center">
+      <img src="Images/Shield_face_avant.jpg" height="250">
     </td>
   </tr>
 </table>
@@ -286,6 +282,7 @@ Les résultats obtenus sont présentés sur les figures suivantes, montrant l’
   <br/>
   <b>Figure 24: Résultats de sensibilité des capteurs graphite (HB, 2B, 4B, 6B)</b>
   <img src="Images/Sensibilite_flex.png" width="600">
+  <br/>
   <b>Figure 25: Résultats de sensibilité du capteur flex en traction et en compression</b>
 </div>  
 
@@ -307,16 +304,14 @@ Ce test est réalisé avec un capteur graphite 2B, car ce type de graphite a mon
 </div>
 
 ##### Résultat
-<table>
+
+<table width="100%">
   <tr>
-    <td align="center">
-      <img src="Images/Repetabilite_graphite_graph1.png" height="250" width="100%">
-      <br/>
-      <b>Figure 27: Répétabilité du capteur graphite – mesures répétées</b>
+    <td width="50%" align="center">
+      <img src="Images/Repetabilite_graphite_graph1.png" height="250">
     </td>
-    <td align="center">
-      <img src="Images/Repetabilite_flex_graph1.png" height="250"  width="100%">
-      <b>Figure 28: Répétabilité du capteur flex – mesures répétées</b>
+    <td width="50%" align="center">
+      <img src="Images/Repetabilite_flex_graph1.png" height="250">
     </td>
   </tr>
 </table>
