@@ -78,22 +78,19 @@ Pour limiter le bruit, en particulier le bruit du réseau électrique à 50 Hz, 
   <b>Figure 3: Circuit d’amplification et de filtrage du signal</b>
 </div>  
   <br/>
-<table>
+
+<table width="100%">
   <tr>
-    <td align="center">
-      <img src="Images/Capteur_graphite_schematic.png" height="450" width="100%">
-      <br/>
-      <b>Figure 4: Modèle électrique du capteur graphite</b>
+    <td width="50%" align="center">
+      <img src="Images/Capteur_graphite_schematic.png" height="250"><br>
+      <em>Figure 4: Modèle électrique du capteur graphite</em>
     </td>
-    <td align="center">
-      <img src="Images/Courant_graphite_LTSpice.png" height="450" width="100%">
-      <br/>
-     <b>Figure 5: Courant du capteur graphite simulé sous LTSpice (sans bruit)</b>
+    <td width="50%" align="center">
+      <img src="Images/Courant_graphite_LTSpice.png" height="260"><br>
+      <em>Figure 5: Courant du capteur graphite simulé sous LTSpice (sans bruit)</em>
     </td>
   </tr>
 </table>
-
-
 
 Pour la simulation, le capteur graphite réel est modélisé dans LTSpice par un circuit électronique dans le figure , qui produit une sortie de courant d’environ 150 nA conformément à la valeur réalité. Le sous‑ensemble C3, R5 et le générateur V2 permet de simuler les bruits provenant de l’environnement.
 
