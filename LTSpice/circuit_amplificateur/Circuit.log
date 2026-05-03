@@ -1,0 +1,26 @@
+LTspice 26.0.1 for Windows
+Circuit: D:\Projet_capteur\2025-2026-4GP-NGUYEN-PHAN-GAMBOA\capteur\circuit_amplificateur\Circuit.net
+Start Time: Thu Apr 16 23:36:21 2026
+
+.step r2=500
+solver = Normal
+Maximum thread count: 8
+tnom = 27
+temp = 27
+method = trap
+Direct Newton iteration succeeded in finding operating point.
+
+.step r2=1000
+Direct Newton iteration succeeded in finding operating point.
+
+.step r2=1500
+Direct Newton iteration succeeded in finding operating point.
+
+.step r2=2000
+Direct Newton iteration succeeded in finding operating point.
+Total elapsed time: 1.026 seconds.
+
+Files loaded:
+D:\Projet_capteur\2025-2026-4GP-NGUYEN-PHAN-GAMBOA\capteur\circuit_amplificateur\Circuit.net
+C:\Users\DELL\AppData\Local\LTspice\lib\sub\LTC.lib
+

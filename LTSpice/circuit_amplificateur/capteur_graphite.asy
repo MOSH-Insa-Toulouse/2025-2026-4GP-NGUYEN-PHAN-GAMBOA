@@ -1,0 +1,16 @@
+Version 4
+SymbolType BLOCK
+RECTANGLE Normal 59 41 -115 -52
+TEXT -68 -8 Left 2 Capteur
+PIN 48 -32 RIGHT 8
+PINATTR PinName cp
+PINATTR SpiceOrder 1
+PIN 48 16 RIGHT 8
+PINATTR PinName cn
+PINATTR SpiceOrder 2
+PIN -96 -32 LEFT 8
+PINATTR PinName gp
+PINATTR SpiceOrder 3
+PIN -96 16 LEFT 8
+PINATTR PinName gn
+PINATTR SpiceOrder 4
